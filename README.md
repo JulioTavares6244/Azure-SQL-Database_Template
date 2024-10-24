@@ -1,55 +1,107 @@
-# Azure SQL Database and Azure SQL Data Warehouse Template
+# 💾 Azure SQL Database & Data Warehouse Template | **Modelo para Azure SQL Database e Data Warehouse**
 
-This repository contains an SQL script that provides a template for creating databases in **Azure SQL Database** and **Azure SQL Data Warehouse**. It includes guidelines for setting up databases on these platforms, offering cloud architects and developers a fully managed, scalable, and highly available relational database system backed by Microsoft Azure.
+### 🌍 **Português:**
 
-## Overview
-
-The script is designed to be executed in the context of the **master** database in **Azure SQL Database** or **Azure SQL Data Warehouse**. After running the script, database management can be done either by connecting to the created database or by managing it through the master database in **SQL Server Management Studio (SSMS)**.
-
-### Azure SQL Database
-
-Azure SQL Database is a fully managed relational database-as-a-service (DBaaS) that offers:
-
-- **Predictable performance** and scalability
-- **Business continuity** with high availability
-- **Data protection** and **security**
-- **Near-zero administration** for ease of use
-
-For more details, see the official documentation on [Azure SQL Database](https://go.microsoft.com/fwlink/p/?LinkId=306622).
-
-### Service Tiers
-
-Azure SQL Database is available in several service tiers:
-
-- **General Purpose** (default): Ideal for most general workloads, providing predictable performance with a 99.99% SLA and low storage latency (5-10ms). Best for those needing a fully managed database engine comparable to Azure SQL IaaS.
-- **Basic**, **Standard**, **Premium**: Offering different levels of performance and business continuity features, suitable for various application needs.
-- **DataWarehouse**: Designed specifically for data warehousing workloads.
-- **Web** and **Business**: Retired service tiers, no longer available.
-
-The **Standard** service tier is great for starting with cloud-designed business applications, offering predictable transaction rates per minute and mid-level performance.
-
-For more information, see the [CREATE DATABASE documentation for Azure SQL Database](https://go.microsoft.com/fwlink/?LinkId=402063).
-
-### Azure SQL Data Warehouse
-
-Azure SQL Data Warehouse is a scalable, cloud-based data warehousing solution designed to handle large-scale analytics workloads with performance optimizations and integration with other Azure services.
-
-For more information, see the official documentation on [Azure SQL Data Warehouse](https://go.microsoft.com/fwlink/?LinkId=787140).
-
-### Usage Instructions
-
-1. **Connect to Azure SQL Database or Data Warehouse** via SSMS.
-2. **Run the provided script** in the context of the **master** database to create the desired database.
-3. After execution, you can either manage the new database or return to the master for administration.
-
-For more information, refer to the following documentation:
-- [CREATE DATABASE for Azure SQL Database](https://go.microsoft.com/fwlink/?LinkId=402063)
-- [CREATE DATABASE for Azure SQL Data Warehouse](https://go.microsoft.com/fwlink/?LinkId=787139)
-
-## Disclaimer
-
-This repository is just for general knowledge, im a user and a fan of the Azure Microsoft Tools but im not getting paid to say this, i just love their products.
+Este repositório contém um **script SQL** para criar bancos de dados no **Azure SQL Database** e **Azure SQL Data Warehouse**. Ideal para quem precisa de uma solução **escalável** e **totalmente gerenciada** com a infraestrutura do Microsoft Azure! ☁️🚀
 
 ---
 
-Feel free to clone this repository and adapt the template script to meet your needs when working with Azure SQL Database or Data Warehouse solutions.
+## 🚀 **O que o script faz?**
+- Configura um banco de dados no **Azure SQL Database** ou **Azure SQL Data Warehouse**.
+- Depois de rodar o script no banco **master**, você pode gerenciar o banco criado pelo **SQL Server Management Studio (SSMS)**.
+
+---
+
+### 💡 **Por que usar o Azure SQL Database?**
+O **Azure SQL Database** é um banco de dados como serviço (DBaaS) que oferece:
+- ⚡ **Desempenho previsível** e escalabilidade
+- 🔄 **Alta disponibilidade**
+- 🔐 **Proteção de dados**
+- 🛠️ **Administração simplificada**
+
+Mais detalhes na [documentação oficial](https://go.microsoft.com/fwlink/p/?LinkId=306622).
+
+---
+
+### 🛠️ **Tiers de Serviço Disponíveis**
+- **General Purpose** (padrão) — Melhor para cargas de trabalho gerais, com SLA de 99,99%.
+- **Basic**, **Standard**, **Premium** — Diferentes níveis de desempenho.
+- **DataWarehouse** — Para grandes volumes de dados analíticos.
+
+Mais informações na [documentação](https://go.microsoft.com/fwlink/?LinkId=402063).
+
+---
+
+### 📊 **Azure SQL Data Warehouse**
+Perfeito para **grandes volumes de dados** e análises complexas, integrando-se com outros serviços do Azure.  
+Confira a [documentação oficial](https://go.microsoft.com/fwlink/?LinkId=787140).
+
+---
+
+## 📋 **Como Usar**
+1. **Conecte-se ao Azure SQL Database/Data Warehouse** via SSMS.
+2. **Execute o script** no banco **master** para criar seu banco de dados.
+3. Administre o novo banco ou volte ao master para mais gerenciamento!
+
+---
+
+⚠️ **Aviso**:  
+Este repositório é apenas para aprendizado! Não sou patrocinado pela Microsoft, só sou fã das ferramentas deles. 😄
+
+---
+
+Clone, explore e adapte o script para seus projetos com **Azure SQL**!
+
+---
+
+### 🌍 **English:**
+
+This repository contains an **SQL script** to create databases in **Azure SQL Database** and **Azure SQL Data Warehouse**. Perfect for those needing a **scalable** and **fully managed** solution powered by Microsoft Azure! ☁️🚀
+
+---
+
+## 🚀 **What does the script do?**
+- Sets up a database in **Azure SQL Database** or **Azure SQL Data Warehouse**.
+- After running the script in the **master** database, you can manage the new database via **SQL Server Management Studio (SSMS)**.
+
+---
+
+### 💡 **Why use Azure SQL Database?**
+**Azure SQL Database** is a database-as-a-service (DBaaS) offering:
+- ⚡ **Predictable performance** and scalability
+- 🔄 **High availability**
+- 🔐 **Data protection**
+- 🛠️ **Simplified administration**
+
+Learn more in the [official documentation](https://go.microsoft.com/fwlink/p/?LinkId=306622).
+
+---
+
+### 🛠️ **Available Service Tiers**
+- **General Purpose** (default) — Ideal for general workloads with a 99.99% SLA.
+- **Basic**, **Standard**, **Premium** — Different levels of performance.
+- **DataWarehouse** — Designed for large-scale data analytics.
+
+For more info, see the [documentation](https://go.microsoft.com/fwlink/?LinkId=402063).
+
+---
+
+### 📊 **Azure SQL Data Warehouse**
+Great for **large-scale data** and complex analytics, integrated with other Azure services.  
+Check out the [official documentation](https://go.microsoft.com/fwlink/?LinkId=787140).
+
+---
+
+## 📋 **How to Use**
+1. **Connect to Azure SQL Database/Data Warehouse** using SSMS.
+2. **Run the script** in the **master** database to create your database.
+3. Manage the new database or return to master for further management!
+
+---
+
+⚠️ **Disclaimer**:  
+This repository is just for learning purposes! I'm not sponsored by Microsoft; I just really like their tools. 😄
+
+---
+
+Feel free to clone, explore, and adapt the script for your **Azure SQL** projects!
